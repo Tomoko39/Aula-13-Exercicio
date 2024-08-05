@@ -3,11 +3,12 @@
  */
 
 public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
-
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        FuncionariosRepositorio repo = new FuncionariosRepositorio();
+
+        Funcionario func = repo.randomFuncionario();
+        Vendedor vendedor = repo.randomVendedor();
+
+        System.out.println(vendedor);
     }
 }
